@@ -1,5 +1,58 @@
+body {
+  background-color: rgb(76, 84, 102);
+}
+
 .App {
+  background-color: #000000;
+  width: 100%;
+  max-width: 800px;
+  margin: 1em auto;
+  padding-bottom: 2em;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4267B2;
+}
+
+.musicCover {
+  border-radius: 40px;
+
+}
+
+.playButton {
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.subTitle {
+  margin-top: -1em;
+  color: #4267B2
+}
+
+.time {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: #4267B2;
+  font-size: smaller;
+}
+
+.timeline {
+  width: 80%;
+  background-color: #4267B2;
+}
+
+input[type="range"] {
+  background-color: #4267B2
 }
 
 .App-logo {
@@ -7,9 +60,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 900px) {
+  .App {
+    width: 50%;
   }
 }
 
@@ -32,6 +85,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
